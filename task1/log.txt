@@ -1,0 +1,17 @@
+commit 8aab8c5bceea78c83491c3cc846da895c72a1c99 (HEAD -> master)
+Author: Yuliya.Yemelyanovich <e-juliae@mail.ru>
+Date:   Tue Feb 6 11:05:17 2018 +0300
+
+    Status.txt added
+
+commit 3b79bdb542327eec09cf17b07d58955970b2cc4e
+Author: Yuliya.Yemelyanovich <e-juliae@mail.ru>
+Date:   Tue Feb 6 11:01:56 2018 +0300
+
+    add .gitignore
+
+commit b67001a478222035cdf87fd88a557b966e345894
+Author: Yuliya.Yemelyanovich <e-juliae@mail.ru>
+Date:   Tue Feb 6 10:57:20 2018 +0300
+
+    Status file added
