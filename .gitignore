@@ -1,9 +1,9 @@
-# содержимое файла .gitignore для IDEA
-
-*.iml
+﻿*.iml
 
 .DS_Store/
 
 .idea/
 
-/out/
+out/
+
+*/.idea/
