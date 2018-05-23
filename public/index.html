@@ -1,0 +1,154 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="dom.js"></script>
+    <script src="photoPosts.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="header-parent" class="content background-color">
+            <template id="non-authorised">
+                <header class="non-authorised display-flex flex-direction-row  flex-justify-content bg-pink">
+                    <div class="left">
+
+                        <form class="display-flex flex-direction-row  flex-justify-content" method="post">
+
+                            <input autocomplete="off" placeholder="Search..." class="round-borders size-button" type="text" name="find" id="find">
+                            <input onclick="return false" id="find-submit" type="submit" value="">
+
+                            <input class="round-borders size-button" type="date" name="date" id="date">
+
+                        </form>
+                    </div>
+                    <div class="right display-flex flex-direction-row  flex-justify-content">
+                        <div class="align-items-right">
+                            <a href="authorisation.html">Log In</a>
+                        </div>
+                        <img class="image-top" src="img/authorise.png" alt="">
+                    </div>
+                </header>
+            </template>
+            <template id="authorised">
+                <header class="authorised display-flex flex-direction-row  flex-justify-content bg-pink">
+                    <div class="left">
+
+                        <form autocomplete="off" class="display-flex flex-direction-row  flex-justify-content" action="" method="post">
+
+                            <input autofocus placeholder="Search..." class="round-borders size-button" type="text" name="find" id="find">
+                            <input onclick="return false" id="find-submit" type="submit" value="">
+
+                            <input class="round-borders size-button" type="date" name="date" id="date">
+
+                        </form>
+
+                    </div>
+
+                    <div class="right display-flex flex-direction-row  flex-justify-content">
+                        <form class="display-flex flex-direction-row  flex-justify-content" action="123" method="post">
+                            <div>
+                                <a id="nickname" href="123">Nickname</a>
+                            </div>
+                            <button id="log-out" onclick="return false" name="log-out" type="submit"></button>
+                        </form>
+                        <button id="add-photo" name="add-photo" type="submit"></button>
+                        <img class="image-top" src="img/face.png" alt="">
+                    </div>
+                </header>
+            </template>
+            <div class="void"></div>
+            <div class="center">
+
+                <div id="post-parent">
+
+                </div>
+                <div id="parent-button">
+                    <template id="button-template">
+                        <div id="button" class="button round-borders">
+                            <div>Download more posts</div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-pink display-flex flex-direction-row flex-justify-content ">
+            <div class="left ">
+                <div class="capture font-big-fat">
+                    PhotoPortal
+                </div>
+                <div>19.02.2016</div>
+            </div>
+            <div class="right ">
+                <div>Yuliya YemelyamoviCH</div>
+                <div>12 group 2 year</div>
+                <div>e-juliar@mail.ru</div>
+            </div>
+        </footer>
+    </div>
+    <template id="post">
+        <div class="post display-flex flex-direction-row  flex-justify-content">
+            <div class="panel-left margin">
+                <div class="image-panel ">
+                    <img id="post-image" src="img/photo_2.jpg " alt=" ">
+                </div>
+                <div class="nick-date  display-flex flex-justify-content ">
+                    <div id="post-author">maryUnicorn</div>
+                    <div id="post-date">10:03 19.02.2018</div>
+                </div>
+                <div id="post-hashtags" class="hashtag display-flex flex-direction-row">
+                </div>
+            </div>
+            <div class="panel-right margin display-flex flex-direction-column flex-justify-content ">
+                <div id="post-description" class="scrolling description ">some text some text some text some text some text some text some text some text some text some text some
+                    text some text some text some text some text some text some text some text some text some some text some
+                    text some text some text some text some text some text some text some text some some text some text some
+                    text some text some text some text some text some text some text some text some text some text some text
+                    some text some text some text some text some text some text some text some text
+                </div>
+                <div class="display-flex  flex-justify-content like-wrapper flex-align-content">
+                    <div id="panel-like" class="display-flex flex-direction-row">
+                        <img class="like" src="img/heart_opacity.png" alt=" ">
+                        <div id="post-like">5</div>
+                    </div>
+                    <div id="edit-parent" class="edit">
+                        <template id="post-edit">
+                            <button id="pencil" class="pencil" type="submit"></button>
+                            <button id="trash" class="trash" type="submit"></button>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="post-add-template">
+        <div id="post-add" class="add post display-flex flex-direction-row  flex-justify-content">
+            <div class="panel-left margin">
+                <div class="image-panel drag display-flex">
+                    <input id="edit-post-photo" class="margin-auto" type="file" name="" id="" value="">
+                    <div id="choose-photo-text" class="margin-auto">Choose a photo</div>
+                </div>
+                <div class="nick-date  display-flex flex-justify-content ">
+                    <div id="edit-post-name">maryUnicorn</div>
+                    <div id="edit-post-date">10:03 19.02.2018</div>
+                </div>
+            </div>
+            <div class="panel-right margin display-flex flex-direction-column flex-justify-content ">
+                <textarea id="edit-post-description" placeholder="Add description here" class="scrolling description"></textarea>
+                <div id="edit-post-button" class="button display-flex  flex-justify-content like-wrapper flex-align-content">
+                    <div>add</div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <script>
+        dom.setUser('Bob');
+    </script>
+</body>
+
+</html>
